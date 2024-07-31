@@ -1,0 +1,46 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.container{
+    max-width: 80vw;
+}
+
+.navbar{
+    display: flex;
+    height: 67px;
+}
+.navbar li{
+    list-style: none;
+    margin: 0 12px;
+}
+
+.topleft{
+    width: 50%;
+    height: 50vh;
+}
+.topright{
+    width: 50%;
+    height: 50vh;
+}
+.section1{
+    height: 50vh;
+}
+
+.my1{
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+.px1{
+    padding-left: 13px;
+    padding-right: 13px;
+}
+
+.bet{
+    color: aqua;
+    background-color: rgba(99, 6, 180, 0.64);
+    border-radius: 7px;
+    padding: 4px 10px;
+    cursor: pointer;
+}

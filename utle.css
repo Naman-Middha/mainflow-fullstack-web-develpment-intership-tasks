@@ -1,0 +1,43 @@
+.min-h-screen{
+    min-height: 80vh;
+}
+.bg-red{
+    background-color: red;
+}
+.mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+.container{
+    max-width: 80vw;
+}
+.flex{
+    display: flex;
+}
+.flex-col{
+    flex-direction: column;
+}
+
+.items-center{
+    align-items: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-center{
+    justify-content: center;
+}
+.font-bold{
+    font-weight: bolder;
+}
+
+.text-blue{
+    color: rgb(88, 88, 236);
+}
+.text-aqua{
+    color: aqua;
+}
+
+.overflow{
+    overflow: hidden;
+}
