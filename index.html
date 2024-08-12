@@ -6,17 +6,23 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="utle.css">
 </head>
-<body bgcolor="black" class="text-aqua overflow">
+<body bgcolor="black" class="text-aqua overflow mainlogo">
     <div class="container mx-auto ">
     <header>
         <nav class="flex justify-between">
             <div class="flex items-center font-bold text-blue"><h1>Sanative Bioscience</h1> </div>
             <ul class="navbar flex items-center">
-                <li><button class="bet">Home</button></li>
-                <li><button class="bet"><a href="about.html" class="text-aqua`">About</a></button></li>
-                <li><button class="bet">Services</button></li>
-                <li><button class="bet">Contact Us</button></li>
-                <li><button class="bet">Our Products</button></li>  
+                <li><button class="bet"><a href="index.html" class="text-aqua">Home</a></button></li>
+                <li><button class="bet"><a href="about.html" class="text-aqua">About us</a></button></li>
+                <li><button class="bet"><a href="sanative_products.pdf" class="text-aqua">Our Products</a></button></li>  
+                <li>
+                    <select class="bet" id="dropdown" onchange="navigate()">
+                        <option value="" disabled selected>Get in Touch</option>
+                        <option value="tel:+919983061000">Call us</option>
+                        <option value="mailto:sanativepk@yahoo.com">Mail us</option>
+                        <option value="https://maps.app.goo.gl/aRNr52g2ifvGHw61A">Find Us On Map</option>
+                    </select>
+                </li>
             </ul>
         </nav>
         <hr>
@@ -28,18 +34,27 @@
                     <h1 class="my1">Your Trust, Our Quality</h1>
                     <p>Welcome to Sanative Bioscience, 
                         where we are dedicated to producing high-quality medicines 
-                        that improve patient outcomes and enhance the quality of life. 
-                        Our commitment to excellence and our focus on quality and safety 
+                        that improve patient outcomes and enhance the quality of life. Our commitment to excellence and our focus on quality and safety 
                         guide us in every step of pharmaceutical manufacturing.</p>
                 </div>
-                <div class="topright flex flex-col justify-between">
-                    <img src="image1.png">
+                <div class="topright flex flex-col justify-between rightposition">
+                    <img src="image1.png" class="flex items-center img flex-col px1" >
                 </div>
             </div>
         </section>
     </main>
-    <hr>
-    <footer> </footer>
+    
+    <footer></footer>
     </div>
+    <script>
+        function navigate() {
+            var dropdown = document.getElementById("dropdown");
+            var selectedValue = dropdown.value;
+            if (selectedValue) {
+                window.location.href = selectedValue;
+                dropdown.selectedIndex = 0;
+            }
+        }
+        </script>
 </body>
 </html>

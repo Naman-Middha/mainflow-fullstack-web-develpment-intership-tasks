@@ -1,15 +1,17 @@
 *{
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
 }
 
 .container{
-    max-width: 80vw;
+    max-width: 100%;
+    padding: 0 20px;
 }
 
 .navbar{
     display: flex;
     height: 67px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 .navbar li{
     list-style: none;
@@ -24,6 +26,9 @@
     width: 50%;
     height: 50vh;
 }
+.rightposition{
+    position: relative;
+}
 .section1{
     height: 50vh;
 }
@@ -31,6 +36,7 @@
 .my1{
     margin-top: 13px;
     margin-bottom: 13px;
+    margin-right: 13px;
 }
 .px1{
     padding-left: 13px;
@@ -43,4 +49,22 @@
     border-radius: 7px;
     padding: 4px 10px;
     cursor: pointer;
+}
+
+h1 {
+    font-size: 2rem; /* Adjust as needed */
+}
+
+p {
+    font-size: 1rem; /* Adjust as needed */
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.875rem;
+    }
 }
